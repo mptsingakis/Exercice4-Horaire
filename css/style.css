@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/*!
+Auteur: MArie-Pier Tsingakis
+Version: 1.0.0
+License: GNU General Public License v2 or later
+
+*/
+/*--------------------------------------------------------------
+>>> LISTE DES FICHIERS SCSS IMPORTÉS 
+----------------------------------------------------------------
+# horaire
+----------------------------------------------------------------
+# horaire
+--------------------------------------------------------------*/
+h1, h2 {
+  margin: 0 auto;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.horaire {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (50px)[11];
+      grid-template-rows: repeat(11, 50px);
+  min-width: 420px;
+}
+
+div {
+  border: black solid 1px;
+  text-align: center;
+}
+
+/* Jour de la semaine 
+a=Lundi
+b=Mardi
+C=Mercredi
+D=Jeudi
+E=Vendredi
+*/
+.a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2/1/2;
+}
+
+.b {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: 1/3/1/3;
+}
+
+.c {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: 1/4/1/4;
+}
+
+.d {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: 1/5/1/5;
+}
+
+.e {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: 1/6/1/6;
+}
+
+/* Heures 
+    heuresB > 9h10
+    heuresC > 10h10
+    heuresD > 11h10
+    heuresE > 12h10
+    heuresF > 13h10
+    heuresG > 14h10
+    heuresH > 15h10
+    heuresI > 16h10
+    heuresJ > 17h10
+    heuresK > 18h10
+*/
+.heuresA {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: 2/1/2/1;
+}
+
+.heuresB {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: 3/1/3/1;
+}
+
+.heuresC {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: 4/1/4/1;
+}
+
+.heuresD {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: 5/1/5/1;
+}
+
+.heuresE {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: 6/1/6/1;
+}
+
+.heuresF {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: 7/1/7/1;
+}
+
+.heuresG {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: 8/1/8/1;
+}
+
+.heuresH {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: 9/1/9/1;
+}
+
+.heuresI {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: 10/1/10/1;
+}
+
+.heuresJ {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: 11/1/11/1;
+}
+
+.heuresK {
+  -ms-grid-row: 12;
+  -ms-grid-column: 1;
+  grid-area: 12/1/12/1;
+}
+
+/*Cours */
+.veilleL {
+  background-color: #f79206;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: -4;
+  -ms-grid-column: 2;
+  grid-area: 6/2/2/2;
+}
+
+.projetPorfolio {
+  background-color: #2b9687;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 3;
+  grid-area: 8/3/12/3;
+}
+
+.videoM {
+  background-color: #186579;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: 2/4/5/4;
+  color: white;
+}
+
+.stage {
+  background-color: #94b2b9;
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: -1;
+  grid-area: 5/5/5/4;
+}
+
+.projetVeille {
+  background-color: #2b6f96;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 4;
+  grid-area: 7/4/12/4;
+}
+
+.videoV {
+  background-color: #186579;
+  color: white;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 6;
+  grid-area: 2/6/5/6;
+}
+
+.veilleV {
+  background-color: #f79206;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-area: 6/6/10/10;
+}
+
+@media screen and (max-width: 700px) {
+  .horaire {
+    font-size: 0.8em;
+  }
+}
+
+/*-------------------------------------------------------------- */
+/*# sourceMappingURL=style.css.map */
